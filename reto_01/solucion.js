@@ -1,19 +1,14 @@
 // aca puedes importar modulos o definir variables/helpers
 function sumaObjetivo(array, objetivo) {
   let res = [];
-  console.time("myTimer");
   for (let i=0; i<array.length; i++) {
-    for(let j=0; j<array.length; j++){
-      if(i != j){
-        if(array[i] + array[j] == objetivo){
-          res.push(array[i]);
-          res.push(array[j]);
-          return res;
-        }
-      }
-    }
+    let b = array.indexOf(objetivo - array[i]);
+    if(array[b] != undefined && b != i){
+      res.push(array[i]);
+      res.push(array[b]);
+      return res;
+    }  
   }
-  console.timeEnd("myTimer");
   return res;
 }
 
