@@ -7,10 +7,9 @@ function sumaObjetivo(array, objetivo) {
       res.push(array[i]);
       res.push(array[b]);
       return res;
-    }  
+    }
   }
   return res;
 }
-
   // no modificar despues de esta linea
  module.exports = { sumaObjetivo }
