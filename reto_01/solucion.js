@@ -3,7 +3,7 @@ function sumaObjetivo(array, objetivo) {
   let res = [];
   for (let i=0; i<array.length; i++) {
     let b = array.indexOf(objetivo - array[i]);
-    if(array[b] != undefined && b != i){
+    if(b > -1 && b != i){
       res.push(array[i]);
       res.push(array[b]);
       return res;
