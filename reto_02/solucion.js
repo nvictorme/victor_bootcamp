@@ -9,11 +9,7 @@ function validarSubserie(arr, secuencia) {
       pos++;
     }
   }
-  if (res.length == secuencia.length){
-    return true;
-  }else{
-    return false;
-  }
+  return res.length == secuencia.length;
 }  
   // no modificar despues de esta linea
  module.exports = { validarSubserie }
