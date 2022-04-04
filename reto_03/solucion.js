@@ -6,11 +6,11 @@
  * @return {number[]} array de cuadrados en orden creciente
  */
 function cuadradosOrdenados(arr) {
-  let res = [];
-    for (let i=0; i<arr.length; i++){
+    /*for (let i=0; i<arr.length; i++){
       res.push(arr[i]**2);
-    }
-    res.sort(function(a, b) {
+    }*/
+    const res = arr.map(x => x**2);
+    res.sort((a, b) => {
       return a - b;
     });
     return res;
